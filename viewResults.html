@@ -1,0 +1,150 @@
+<!--
+Conestoga College
+Created by: Baljeet Bilkhu
+Created on: June 15th, 2022
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Results!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pcmystyle.css">
+
+    <!--    scripts-->
+    <script src="js/lib/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/lib/jquery.validate.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+
+    <!--   MY scripts-->
+    <script src="js/jsfile.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var id = window.location.search.substring(1);
+            console.log(id);
+
+            LoadRegistrationData(id);
+        });
+
+    </script>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1003.0" data-gr-ext-installed="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Conestoga College Parking App</a>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container" style="padding-top: 5em">
+        <h1 style="text-align: center;">Here are your results based on the input values:</h1><br>
+        <div class="form-group">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>User Details</h3>
+                </div>
+                <div class="card-body col-md-8" style="margin: auto">
+
+                    <div class="form-group ">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" disabled>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" disabled>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="email">email Address</label>
+                        <input type="text" class="form-control" id="email" name="email" disabled>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" name="phone" disabled>
+                    </div>
+                    <div class="form-group ">
+                        <label for="startDate">Start Date</label>
+                        <input type="text" class="form-control" id="startDate" name="startDate" disabled>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="endDate">End Date</label>
+                        <input type="text" class="form-control" id="endDate" name="endDate" disabled>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <label for="make">Vehicle Make</label>
+                        <input type="text" class="form-control" id="make" name="make" disabled>
+                    </div>
+                    <div class="form-group ">
+                        <label for="model">Vehicle Model</label>
+                        <input type="text" class="form-control" id="model" name="model" disabled>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="licensePlate">License Plate</label>
+                        <input type="text" class="form-control" id="licensePlate" name="licensePlate" disabled>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Total Cost of Parking</h3>
+                </div>
+                <div class="card-body col-md-8" style="margin: auto">
+                    <div class="form-group">
+                        <label for="duration"><strong>Total Duration:</strong></label>
+                        <input type="text" class="form-control" id="duration" name="duration" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="discountApplied"><strong>Discount Applied:</strong></label>
+                        <input type="text" class="form-control" id="discountApplied" name="discountApplied" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subTotal"><strong>Sub-Total (@ $7.50 per day):</strong></label>
+                        <input type="text" class="form-control" id="subTotal" name="subTotal" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="totalPrice"><strong>Total Cost (including HST and the $3.50 service
+                                fee):</strong></label>
+                        <input type="text" class="form-control" id="totalPrice" name="totalPrice" disabled>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <small>&copy; 2022 Baljeet Bilkhu</small>
+    </main>
+
+</body>
+
+</html>
